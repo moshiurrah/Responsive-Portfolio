@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url("../../assets/images/gravel.png");
+}
+
+/*
+  The width of the wrapper will be 1024px
+  at browser widths above 768px
+*/
+
+
+.headerarea{
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+
+header {
+    
+    font-family: 'Arial', Helvetica, sans-serif;
+    width: 960px;
+    margin: auto;
+    display: table;
+}
+
+header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: left;
+  margin:0px;
+  padding: 10px;
+
+  color: white;
+  background-color:#4aaaa5;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-right: 10px;
+  border-right: 1px solid #cccccc;
+ 
+}
+
+nav ul li:last-child {
+    padding-right: 0;
+    border-right: 0;
+    margin-right:0;
+  
+    
+}
+
+nav a {
+  color: #777777;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contentarea{
+    padding: 10px 0px 20px 0px;
+
+}
+
+
+section {
+    font-family: 'Arial', Helvetica, sans-serif;
+    width: 960px;
+    font-size: 14px;
+    margin: auto;
+    display: table;
+    background-color: #ffffff;
+    border:2px solid #dddddd;
+    
+}
+
+article {
+       padding: 0px 25px 25px 25px; 
+}
+/*this is home page image of Daffy Duck*/
+#home_page {
+    float: left;
+    border: 1px ;
+    margin: 0px 0px 15px 20px;
+}
+
+article h2 {
+    color: #4aaaa5;
+    padding:10px 0 10px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+
+/**this is for Form ***/
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:#4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+figure {
+    margin: 15px 15px 15px 15px;
+    position: relative;
+    float: left;
+}
+
+figcaption {
+    background-color: #4aaaa5;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 18px; 
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+figure:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/****Sticky footer****/
+footer {
+    color: #ffffff;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+    padding-top: 5px;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+/*980px, 768px and 640px*/
+
+/* Screen size 980px */
+
+@media screen and (max-width: 980px) {
+      
+    header,section{
+        
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+        
+    header,section{
+        
+        width: 95%;
+           
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+       
+    header,section{
+        
+        width: 100%;
+    }
+
+    header h1{
+        clear: both;
+        text-align: center;
+        width:100%;
+    }
+    header nav{
+        text-align: center;
+        width:100%;
+    }
+    
+    nav ul {
+        padding-left: 0px;
+            
+    }
+     
+}
